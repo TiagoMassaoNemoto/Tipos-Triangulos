@@ -43,6 +43,7 @@ public class frmPrincipal extends javax.swing.JDialog
         lblResposta = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Tipo Triangulo");
 
         lblLado1.setText("Lado 1");
 

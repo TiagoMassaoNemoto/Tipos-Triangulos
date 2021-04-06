@@ -18,8 +18,12 @@ public class Validacao extends absPropriedades
             this.setL2(Double.valueOf(this.getLado2()));
             this.setL3(Double.valueOf(this.getLado3()));
             if (this.getL1() <= 0 || this.getL2()<= 0 || this.getL3() <= 0)
-                this.setMensagem("Digite um número"
-                        + " maior que zero");
+                this.setMensagem("Digite um número maior que zero");
+            
+            else if (this.getL1() + this.getL2() <= this.getL3() |
+                this.getL2() + this.getL3() <= this.getL1() |
+                this.getL3() + this.getL1() <= this.getL2())
+                this.setMensagem("Não é um triangulo");
         }
         catch (Exception e)
         {
